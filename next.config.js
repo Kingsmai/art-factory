@@ -41,7 +41,6 @@ module.exports = withPWA({
         Buffer: ['buffer', 'Buffer'],
       }),
     ]);
-    config.experiments = { ...config.experiments, topLevelAwait: true }
     const experiments = config.experiments || {};
     Object.assign(experiments, {
       asyncWebAssembly: true,
